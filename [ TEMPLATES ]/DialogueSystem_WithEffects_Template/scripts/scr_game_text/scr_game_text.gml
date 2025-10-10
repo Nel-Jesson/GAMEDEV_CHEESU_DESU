@@ -8,7 +8,7 @@ switch(_text_id){
 		scr_text("Clearly this dialog box might be too big to fit into a normal game");
 		scr_text("Unless of course you're making a visual novel, but I doubt you'll be doing that.");
 		break;
-		
+//----------------------------------------------------------------------------------//
 	case "object 2":
 		scr_text("I am the second interactable.");
 		scr_text("I am a maniac");
@@ -17,13 +17,13 @@ switch(_text_id){
 			scr_option("I must leave.", "object 2 - leave");
 		break;
 		case "object 2 - why?":
-		
+			scr_text("I am a maniac of course");
 			break;
-			
 		case "object 2 - leave":
-		
+			scr_text("Oh really?");
+			scr_text("Bye now");
 			break;
-		
+//----------------------------------------------------------------------------------//	
 		
 	case "object 3":
 		scr_text("To be 3 or not to be 3?");
