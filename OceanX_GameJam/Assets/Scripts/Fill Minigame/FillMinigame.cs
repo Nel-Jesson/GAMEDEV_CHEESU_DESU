@@ -8,7 +8,8 @@ public class FillMinigame : MonoBehaviour
     [SerializeField] public GameObject meter;
     [SerializeField] public GameObject movingBox;
     [SerializeField] public GameObject targetBox;
-    [SerializeField] public int hitBox = 15;
+    [SerializeField] public int hitBox;
+    [SerializeField] public int meterMax = 300;
     public int meterAmt;
     [SerializeField] public int meterFill;
     [SerializeField] public int meterLoss;
@@ -63,10 +64,10 @@ public class FillMinigame : MonoBehaviour
                 Debug.Log("Meter filling");
                 meterAmt += meterFill;
 
-                if (meterAmt > 200)
+                if (meterAmt > meterMax)
                 {
 
-                    meterAmt = 200;
+                    meterAmt = meterMax;
 
                 }
 
